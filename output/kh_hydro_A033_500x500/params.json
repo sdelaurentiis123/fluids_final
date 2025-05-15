@@ -1,0 +1,17 @@
+{
+    "test_id": "hydro_A033_500x500",
+    "problem_generator": "kh_bfield",
+    "drat": 2.0,
+    "bx0": 0.0,
+    "by0": 0.0,
+    "bz0": 0.0,
+    "resolution": {
+        "nx1": 500,
+        "nx2": 500,
+        "nx3": 1
+    },
+    "vflow": 0.5,
+    "amp": 0.01,
+    "domain_Lx": 1.0,
+    "domain_Ly": 1.0
+} 

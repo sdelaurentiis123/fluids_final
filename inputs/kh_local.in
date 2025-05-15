@@ -1,0 +1,67 @@
+# problem_id: kh_local_A033
+# problem_notes: Baseline hydro A033 case for Mini-KH study.
+#                iprob=2 (Frank et al. 1996 type tanh profile for velocity)
+#                Delta_V = 1.0 (vflow = 0.5)
+#                Uniform density (rho=1.0 as per iprob=2 in kh_bfield.cpp)
+#                Perturbation amplitude amp = 0.01
+#                Magnetic field Bx0 = 0.0
+#                Domain Lx=1 (x1=[0,1]), Ly=1 (x2=[-0.5,0.5])
+#                Resolution 256x128
+#                BCs: x1-reflecting, x2-periodic
+#                tlim = 2.0 (approx 2 t_KH for k_wavenumber=2, A=0)
+
+<job>
+problem_id = kh_bfield      # Problem generator to use (Mini-KH version)
+
+<output1>
+file_type  = hst         # History data dump
+dt         = 0.01        # Time increment between history dump
+
+<output2>
+file_type  = hdf5        # HDF5 data dump
+variable   = prim        # Write primitive variables
+dt         = 0.1         # Time increment between outputs
+
+<time>
+cfl_number = 0.3          # The Courant-Friedrichs-Lewy (CFL) number
+nlim       = -1           # Step limit
+tlim       = 2.0          # Time limit
+
+<mesh>
+nx1        = 256          # Number of zones in X1-direction
+x1min      = 0.0          # Minimum X1
+x1max      = 1.0          # Maximum X1
+ix1_bc     = reflecting   # Inner-X1 boundary condition flag
+ox1_bc     = reflecting   # Outer-X1 boundary condition flag
+
+nx2        = 128          # Number of zones in X2-direction
+x2min      = -0.5         # Minimum X2
+x2max      = 0.5          # Maximum X2
+ix2_bc     = periodic     # Inner-X2 boundary condition flag
+ox2_bc     = periodic     # Outer-X2 boundary condition flag
+
+nx3        = 1            # Number of zones in X3-direction
+x3min      = 0.0          # Minimum X3
+x3max      = 1.0          # Maximum X3
+ix3_bc     = periodic     # Inner-X3 boundary condition flag
+ox3_bc     = periodic     # Outer-X3 boundary condition flag
+
+<meshblock>
+nx1        = 256          # Number of cells in each MeshBlock, X1-dir
+nx2        = 128          # Number of cells in each MeshBlock, X2-dir
+nx3        = 1            # Number of cells in each MeshBlock, X3-dir
+
+<hydro>
+gamma      = 1.6666666666666667 # Heat capacity ratio (5/3)
+eos        = adiabatic
+
+<problem>
+iprob      = 2            # Problem type: Frank et al. 1996 KH
+vflow      = 0.5          # Shear flow velocity (Delta V = 2*vflow = 1.0)
+amp        = 0.01         # Perturbation amplitude for v_y
+drat       = 1.0          # Density ratio rho_bottom/rho_top (default for uniform density)
+bx0        = 0.0          # Initial Bx field strength
+by0        = 0.0          # Initial By field strength
+bz0        = 0.0          # Initial Bz field strength
+# drat is not used by iprob=2 in kh_bfield.cpp (uniform density rho=1.0)
+

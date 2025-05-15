@@ -1,0 +1,128 @@
+Running KHI analysis for test: hydro_A033
+Output directory: /Users/stanislavdelaurentiis/fluids_proj_athena/output/kh_hydro_A033_256x128
+Created directory: /Users/stanislavdelaurentiis/fluids_proj_athena/output/kh_hydro_A033_256x128/analysis_plots
+Loaded simulation parameters from /Users/stanislavdelaurentiis/fluids_proj_athena/output/kh_hydro_A033_256x128/params.json
+Parameters for analysis: drat=2.0, bx0=0.0, Lx=1.0, vflow=0.5
+Found 21 HDF5 files. Processing a subset for growth rate...
+Time: 0.0000, Extracted kx=1 Amplitude: 1.000000e-06
+Time: 0.1001, Extracted kx=1 Amplitude: 2.707077e-02
+Time: 0.2001, Extracted kx=1 Amplitude: 1.111346e-01
+Time: 0.3004, Extracted kx=1 Amplitude: 2.466092e-01
+Time: 0.4004, Extracted kx=1 Amplitude: 3.380671e-01
+Time: 0.5003, Extracted kx=1 Amplitude: 3.114931e-01
+Time: 0.6001, Extracted kx=1 Amplitude: 2.424606e-01
+Time: 0.7002, Extracted kx=1 Amplitude: 2.702096e-01
+Time: 0.8000, Extracted kx=1 Amplitude: 2.751484e-01
+Time: 0.9000, Extracted kx=1 Amplitude: 3.379616e-01
+Time: 1.0004, Extracted kx=1 Amplitude: 2.864653e-01
+Time: 1.1005, Extracted kx=1 Amplitude: 1.772233e-01
+Time: 1.2001, Extracted kx=1 Amplitude: 1.062520e-01
+Time: 1.3003, Extracted kx=1 Amplitude: 9.163561e-02
+Time: 1.4003, Extracted kx=1 Amplitude: 2.048137e-01
+Time: 1.5005, Extracted kx=1 Amplitude: 2.122348e-01
+Time: 1.6001, Extracted kx=1 Amplitude: 1.809058e-01
+Time: 1.7002, Extracted kx=1 Amplitude: 2.270801e-01
+Time: 1.8002, Extracted kx=1 Amplitude: 2.598490e-01
+Time: 1.9001, Extracted kx=1 Amplitude: 2.466129e-01
+Time: 2.0000, Extracted kx=1 Amplitude: 2.265068e-01
+M1: Fitting on 4 data points for linear growth phase.
+   Fit range: t=[0.1001 ... 0.4004], A=[2.71e-02 ... 3.38e-01]
+Fitted growth rate (sigma_num): 8.361374e+00
+Fitted initial amplitude (A0): 1.553204e-02
+Growth rate plot saved to /Users/stanislavdelaurentiis/fluids_proj_athena/output/kh_hydro_A033_256x128/analysis_plots/metric_M1_growth_rate_hydro_A033_kx1.png
+M1 (sigma_num) for hydro_A033: 8.361374498133788
+
+--- Calculating M2: Shear Layer Thickness for hydro_A033 (drat=2.0) ---
+Expected rho_top=1.0, rho_bottom=2.0, mid_rho=1.500
+Warning: Only one crossing found for mid_rho in kh_bfield.out2.00000.athdf. Thickness is ill-defined.
+Warning: Only one crossing found for mid_rho in kh_bfield.out2.00001.athdf. Thickness is ill-defined.
+Warning: Only one crossing found for mid_rho in kh_bfield.out2.00002.athdf. Thickness is ill-defined.
+Warning: Only one crossing found for mid_rho in kh_bfield.out2.00003.athdf. Thickness is ill-defined.
+Warning: Only one crossing found for mid_rho in kh_bfield.out2.00004.athdf. Thickness is ill-defined.
+Time: 0.5003, Shear layer thickness: 0.2840
+Time: 0.6001, Shear layer thickness: 0.4567
+Time: 0.7002, Shear layer thickness: 0.4411
+Time: 0.8000, Shear layer thickness: 0.4463
+Time: 0.9000, Shear layer thickness: 0.7686
+Time: 1.0004, Shear layer thickness: 0.7350
+Time: 1.1005, Shear layer thickness: 0.7303
+Time: 1.2001, Shear layer thickness: 0.6914
+Time: 1.3003, Shear layer thickness: 0.3540
+Time: 1.4003, Shear layer thickness: 0.3517
+Time: 1.5005, Shear layer thickness: 0.2382
+Time: 1.6001, Shear layer thickness: 0.6807
+Time: 1.7002, Shear layer thickness: 0.1602
+Time: 1.8002, Shear layer thickness: 0.1821
+Time: 1.9001, Shear layer thickness: 0.1663
+Time: 2.0000, Shear layer thickness: 0.1486
+Shear layer thickness plot saved to /Users/stanislavdelaurentiis/fluids_proj_athena/output/kh_hydro_A033_256x128/analysis_plots/metric_M2_thickness_hydro_A033.png
+M2 (Shear Layer Thickness) for hydro_A033: Final thickness = 0.1486
+
+--- Calculating M3: Dominant Wavenumber for hydro_A033 ---
+Time: 0.0000, Dominant kx: 6.3078 (mode 1)
+Time: 0.1001, Dominant kx: 12.6157 (mode 2)
+Time: 0.2001, Dominant kx: 6.3078 (mode 1)
+Time: 0.3004, Dominant kx: 6.3078 (mode 1)
+Time: 0.4004, Dominant kx: 6.3078 (mode 1)
+Time: 0.5003, Dominant kx: 25.2313 (mode 4)
+Time: 0.6001, Dominant kx: 25.2313 (mode 4)
+Time: 0.7002, Dominant kx: 12.6157 (mode 2)
+Time: 0.8000, Dominant kx: 12.6157 (mode 2)
+Time: 0.9000, Dominant kx: 6.3078 (mode 1)
+Time: 1.0004, Dominant kx: 6.3078 (mode 1)
+Time: 1.1005, Dominant kx: 12.6157 (mode 2)
+Time: 1.2001, Dominant kx: 18.9235 (mode 3)
+Time: 1.3003, Dominant kx: 6.3078 (mode 1)
+Time: 1.4003, Dominant kx: 6.3078 (mode 1)
+Time: 1.5005, Dominant kx: 12.6157 (mode 2)
+Time: 1.6001, Dominant kx: 18.9235 (mode 3)
+Time: 1.7002, Dominant kx: 6.3078 (mode 1)
+Time: 1.8002, Dominant kx: 6.3078 (mode 1)
+Time: 1.9001, Dominant kx: 6.3078 (mode 1)
+Time: 2.0000, Dominant kx: 6.3078 (mode 1)
+Dominant wavenumber plot saved to /Users/stanislavdelaurentiis/fluids_proj_athena/output/kh_hydro_A033_256x128/analysis_plots/metric_M3_kmax_hydro_A033.png
+M3 (Dominant Wavenumber k_max) for hydro_A033: Last k_max = 6.3078
+
+--- Calculating M4: Energy Drift from /Users/stanislavdelaurentiis/fluids_proj_athena/output/kh_hydro_A033_256x128/kh_bfield.hst ---
+M4 (Energy Drift) for kh_bfield.hst: 0.000000e+00
+M4 (Total Energy Drift %) for hydro_A033: 0.000000e+00%
+
+--- Evaluating Analytic Benchmarks ---
+
+--- Evaluating T1: Hydro Growth Rate Accuracy ---
+  Parameters: drat=2.00, vflow=0.50, Lx=1.00
+  Calculated: Atwood A=0.3333, k_primary=6.2832
+  Theoretical sigma_th: 1.480961e+00
+  Numerical sigma_num (M1): 8.361374e+00
+  Relative difference (sigma_num/sigma_th - 1): 4.6459
+T1 Result: FAIL (Absolute relative difference 4.6459 >= 1.00 for hydro_A033).
+
+Note: The discrepancy between theoretical and numerical growth rates is expected:
+  1. Linear theory assumes infinitesimal perturbations; simulations have finite perturbations.
+  2. Numerical diffusion in the simulation can affect growth rates.
+  3. Limited resolution (especially at the interface) impacts the measured growth rate.
+  4. The theoretical growth rate is for the continuous problem; discretization introduces errors.
+  5. For higher accuracy, higher resolution runs are needed (e.g., 512x256 or 1024x512).
+
+--- Evaluating T2: Magnetic Field Suppression ---
+T2 Result: SKIPPED (Not an MHD run, Bx0 = 0).
+
+--- Evaluating T3: Perpendicular B-field Effect ---
+T3 Result: SKIPPED (No perpendicular B-field components in this run)
+
+--- Evaluating T4: Atwood Number Effect ---
+  Parameters: drat=2.00, Atwood A=0.3333, vflow=0.50, Lx=1.00
+  Theoretical growth rate for A=0 (uniform): 1.570796e+00
+  Theoretical growth rate for A=0.3333: 1.480961e+00
+  Numerical growth rate: 8.361374e+00
+  Theoretical growth reduction factor sqrt(1-A²): 0.9428
+T4 Result: INFO (A=0.3333 should reduce growth rate by factor 0.9428)
+  - To fully verify this benchmark, compare to an equivalent run with A=0 (drat=1)
+
+--- Evaluating T5: Dominant Mode Evolution ---
+  Parameters: Lx=1.00, k_primary=6.2832
+  Final dominant wavenumber: k_max=6.3078
+  Mode ratio k_max/k_primary: 1.00 (approximately mode 1)
+T5 Result: FAIL (Energy should cascade to higher wavenumbers in nonlinear phase)
+
+Finished KHI analysis for test: hydro_A033

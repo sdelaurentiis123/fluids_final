@@ -1,0 +1,7 @@
+{
+  "runs": [
+    { "id": "A0.1", "athdf_dir": "./A0.1", "label": "Atwood=0.1", "atwood_number": 0.1 },
+    { "id": "A0.5", "athdf_dir": "./A0.5", "label": "Atwood=0.5", "atwood_number": 0.5 },
+    { "id": "A0.9", "athdf_dir": "./A0.9", "label": "Atwood=0.9", "atwood_number": 0.9 }
+  ]
+} 

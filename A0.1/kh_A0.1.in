@@ -25,13 +25,13 @@ tlim       = 10.0     # time limit
 </time>
 
 <mesh>
-nx1        = 128      # Number of zones in X1-direction
+nx1        = 256      # Number of zones in X1-direction
 x1min      = -0.5     # minimum value of X1
 x1max      = 0.5      # maximum value of X1
 ix1_bc     = periodic # Inner-X1 boundary condition
 ox1_bc     = periodic # Outer-X1 boundary condition
 
-nx2        = 128      # Number of zones in X2-direction
+nx2        = 256      # Number of zones in X2-direction
 x2min      = -0.5     # minimum value of X2
 x2max      = 0.5      # maximum value of X2
 ix2_bc     = periodic # Inner-X2 boundary condition

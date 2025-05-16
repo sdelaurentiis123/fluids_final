@@ -1,4 +1,4 @@
 Run ID: A0.5 (Atwood=0.5)
-Calculated gamma_growth_rate: 1.3301546909225737
-Fit parameters (slope, intercept) for log(KE_y) vs t: 2.6603093818451473, -11.404732130785964
-Fitted over t_start=0.0000, t_end=3.6007
+Calculated gamma_growth_rate: 1.1493048119036406
+Fit parameters (slope, intercept) for log(KE_y) vs t: 2.2986096238072813, -10.507918318293786
+Fitted over t_start=0.0000, t_end=3.9004
